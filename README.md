@@ -51,11 +51,11 @@
 
 After the completion of our MVP, we decided to expand upon the complexity of our project utilizing the OpenStreetMap toolbox! We applied **TrafficLightRL** to various University campuses across Canada to demonstrate how our project might have an impact on real students' lives. This served as our interactive demonstration component when presenting at CUCAI 2025!
 
-- 🏙️ [**University of Toronto**](University_of_Toronto/) Read more about Varun's work here!
-- 🏗️ [**University of Waterloo**](University_of_Waterloo/) Read more about Clara's work here!
-- 🛤️ [**Queen's University**](Queens_University/) Learn more about Ryan's work here!
-- 🚏 [**Western University**](Western_University/) Learn more about Tridib's Work here!
-- 🏠 [**McMaster University**](McMaster_University/) Learn more about Kristian's work here!
+- 🏙️ [**University of Toronto**](UofT/) Read more about Varun's work here!
+- 🏗️ [**University of Waterloo**](Waterloo/) Read more about Clara's work here!
+- 🛤️ [**Queen's University**](Queens/) Learn more about Ryan's work here!
+- 🚏 [**Western University**](Western/) Learn more about Tridib's Work here!
+- 🏠 [**McMaster University**](McMaster/) Learn more about Kristian's work here!
 
 
 ---
