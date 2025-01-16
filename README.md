@@ -2,6 +2,12 @@
 
 ---
 
+## 🌟 Project Overview
+
+**TrafficLightRL** leverages **Reinforcement Learning (RL)** to dynamically optimize traffic light control systems, reducing urban congestion and improving travel efficiency. This project showcases the power of machine learning in real-world infrastructure management, with a focus on scalability, safety, and adaptability.
+
+---
+
 ## 👥 Team Members
 
 - **Kristian Diana** - Project Lead
@@ -9,12 +15,6 @@
 - **Ryan Li** - Project Member
 - **Varun Pathak** - Project Member
 - **Tridib Banik** -- Project Member
-
----
-
-## 🌟 Project Overview
-
-**TrafficLightRL** leverages **Reinforcement Learning (RL)** to dynamically optimize traffic light control systems, reducing urban congestion and improving travel efficiency. This project showcases the power of machine learning in real-world infrastructure management, with a focus on scalability, safety, and adaptability.
 
 ---
 
@@ -31,19 +31,15 @@
 ## 💻 Technologies
 
 - **Reinforcement Learning:** [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/) for agent training.
-- **Traffic Simulation:** [SUMO (Simulation of Urban MObility)](https://www.eclipse.org/sumo/) for realistic modeling.
+- **Traffic Simulation:** [SUMO (Simulation of Urban MObility)](https://www.eclipse.org/sumo/) for realistic simulations.
 - **Environment Design:** [OpenAI Gymnasium](https://gymnasium.farama.org/) for RL integration.
 - **Mapping Tools:** [OpenStreetMap](https://www.openstreetmap.org/) for real-world data.
-- **Visualization:** SUMO-GUI.
 
 ---
 
-## 🏆 Project Highlights
+## 🏆 MVP
 
-- **Innovative RL Integration:** Traffic agents trained to adapt dynamically to changing conditions.
-- **Real-World Scenarios:** Simulations modeled after real intersections with OSM data.
-- **Interactive Demos:** Campus-specific presentations to showcase tailored solutions.
-- **Scalable and Generalizable:** A foundation for expanding to diverse urban settings.
+Description: will probably include a short video demo of the MVP as well as a bunch of metrics (big numbers that will help make our project stand out!) *Ex. Reduced wait times by 30%*
 
 ---
 
