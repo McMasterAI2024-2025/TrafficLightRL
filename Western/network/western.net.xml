@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-01-25 20:38:07 by Eclipse SUMO netedit Version 1.21.0
+<!-- generated on 2025-01-26 02:05:18 by Eclipse SUMO netedit Version 1.21.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumocfg-file value="C:\Users\OWNER\Sumo\2025-01-25-20-35-54\osm.sumocfg"/>
-        <additional-files value="C:\Users\OWNER\Sumo\2025-01-25-20-35-54\osm.poly.xml.gz"/>
-        <route-files value="C:\Users\OWNER\Sumo\2025-01-25-20-35-54\osm.passenger.trips.xml"/>
+        <sumocfg-file value="./network/western.sumocfg"/>
+        <additional-files value="./network/../../../../../Sumo/2025-01-25-20-35-54/osm.poly.xml.gz"/>
+        <route-files value="./network/../../../../../Sumo/2025-01-25-20-35-54/osm.passenger.trips.xml"/>
         <sumo-net-file value="C:\Users\OWNER\Downloads\MacAI_Projects\TrafficLightRL\Western\network\western.net.xml"/>
     </input>
 
