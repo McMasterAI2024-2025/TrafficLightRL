@@ -34,7 +34,7 @@ def run_sumo():
         traci.load(["-c", sumo_config])
         print("Finished reloading")
         print("finished close")
-
+        
 
     traci.close()
 
