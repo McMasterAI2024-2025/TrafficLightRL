@@ -18,8 +18,8 @@ TrafficLightRL is a project focused on using reinforcement learning to optimize 
 
 ---
 
-## 🎥 Demo Video
-[Demo Video Placeholder](#)
+## 🎥 Demo Video (Green = Traditional System, Blue = RL Agent)
+![Demo Video Placeholder](./demo_vid.gif)
 
 ---
 
