@@ -11,15 +11,14 @@ TrafficLightRL is a project focused on using reinforcement learning to optimize 
 
 ## 🖼️ Visualizations
 
-### Network Architecture vs. Google Maps View
-| Network File | Google Maps Top-Down View |
-|--------------|---------------------------|
-| ![Network File Placeholder](path/to/network_file_image.png) | ![Google Maps View Placeholder](path/to/google_maps_image.png) |
+### Google Maps View of Network
+Exported this geographical location to a SUMO network using the OSM Web Wizard.
+![Map View Placeholder](./documentation/mcmaster_map_image.png)
 
 ---
 
 ## 🎥 Demo Video (Green = Traditional System, Blue = RL Agent)
-![Demo Video Placeholder](./demo_vid.gif)
+![Demo Video Placeholder](./documentation/demo_vid.gif)
 
 ---
 
