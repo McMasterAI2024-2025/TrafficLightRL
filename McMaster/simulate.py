@@ -60,7 +60,7 @@ class SumoEnv(gymnasium.Env):
     max_cars = 250 # CHANGE FOR ACTUAL MAX. NUMBER OF CARS
     self.max_cars = max_cars
     
-    self.car_spawn_rate = 0.55 # cars spawn at 30% chance
+    self.car_spawn_rate = 0.60 # cars spawn at 30% chance
 
     # np array structure: [traffic_light_phase][positions][speeds], dtype=np.float32
     self.observation_space = gymnasium.spaces.Box(
@@ -501,7 +501,7 @@ class SumoEnv(gymnasium.Env):
 
 
 
-env = SumoEnv(use_gui=False, use_random=True, use_actions=False) # use_gui=False sets sumo_binary to 'sumo' instead of 'sumo-gui'
+env = SumoEnv(use_gui=True, use_random=True, use_actions=False) # use_gui=False sets sumo_binary to 'sumo' instead of 'sumo-gui'
 
 episodes = 1 # note can only be run ONCE with sumo-gui!
 score_log = []

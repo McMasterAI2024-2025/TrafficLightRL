@@ -2,15 +2,7 @@
 
 ---
 
-## 🚦 Brief Description
-TrafficLightRL is a project focused on using reinforcement learning to optimize traffic light control systems at [University Name]. This project integrates advanced machine learning techniques with real-world urban infrastructure data to improve traffic flow and reduce congestion.
-
-**^^ will update the above text later on! it'll be good to include a bunch of metrics somewhere in this file as well. The purpose of this is to help you for example if you were in a job interview and you wanted to explain your contributions to the project this can help you explain to the recruiter your work so definitely put some thought into this**
-
----
-
-## 🖼️ Google Maps View
-![Map View Placeholder](./documentation/mcmaster_map_image.png)
+As McMaster students, we were curious how this project might be able to improve our own daily lives. Thus we trained and tested an RL agent on the Main St W and University Ave intersection, the results are as follows. In each of the graphs we evaluated the RL agent on varying traffic densities, with each point representing the average of 100 episodes to ensure statistical reliability and smooth distributions.
 
 ---
 
@@ -19,7 +11,34 @@ TrafficLightRL is a project focused on using reinforcement learning to optimize 
 
 ---
 
-## 📄 Challenges and Future Considerations
-If you take a look at the SUMO network you will notice that there are no pedestrian crosswalks. Unfortunately OSM Web Wizard is not quite perfect, and was unable to export a network that accurately reflected the actual map while including pedestrian crosswalks. While I acknowledge this as a current flaw in the agent's ability to "simulate reality", I believe that the strong metrics outlined earlier emphasize the applicability of RL in this context. 
+## 🖼️ Simulation vs. Reality
+Our network was generated from OpenStreetMap data. While pedestrian crosswalks were omitted due to export limitations, this does not impact the core RL functionality.
+![Map View Placeholder](./documentation/mcmaster_map_image.png)
 
-As seen in the top right of the map view, this intersection is directly connected to the McMaster Children's Hospital. In the future I would like to implement additional functionality of our agent to be able to prioritize emergency vehicles both leaving and going to the hospital, to ensure our solution puts the health needs of the community first. 
+---
+
+## 🚦 Results
+
+📉 Wait Time Reduction:
+- Low Traffic: 13% decrease
+- Medium Traffic: 24% decrease
+- High Traffic: 19% decrease
+
+![Wait Times Graph Placeholder](./documentation/wait_times_final.png)
+
+🌱 Emissions Reduction:
+- Low Traffic: 10% decrease
+- Medium Traffic: 23% decrease
+- High Traffic: 29% decrease
+
+![Emissions Graph Placeholder](./documentation/emissions_final.png)
+
+---
+
+🚀 Future Enhancements
+
+- Emergency Vehicle Priority: Optimize signals for ambulances near McMaster Children's Hospital.
+- Pedestrian Consideration: Improve network accuracy by integrating pedestrian crossings.
+- Expanded Deployment: Apply the model to additional real-world locations.
+
+Our results demonstrate RL’s potential to revolutionize trffic management—making within the McMaster Community. Implementation of this project would make roads safer, more efficient, and environmentally friendly for Students, McMaster Faculty, and members of the community.
