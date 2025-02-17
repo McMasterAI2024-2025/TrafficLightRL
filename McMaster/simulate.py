@@ -50,6 +50,7 @@ class SumoEnv(gymnasium.Env):
       5: 0,
       7: 0
     }
+    self.vehicle_emissions = {}
     self.max_wait_time = 1000
     num_lanes=13
     num_metrics_per_lane = 5
@@ -59,7 +60,7 @@ class SumoEnv(gymnasium.Env):
     max_cars = 250 # CHANGE FOR ACTUAL MAX. NUMBER OF CARS
     self.max_cars = max_cars
     
-    self.car_spawn_rate = 0.55 # cars spawn at 30% chance
+    self.car_spawn_rate = 0.60 # cars spawn at 30% chance
 
     # np array structure: [traffic_light_phase][positions][speeds], dtype=np.float32
     self.observation_space = gymnasium.spaces.Box(
@@ -427,7 +428,6 @@ class SumoEnv(gymnasium.Env):
 
     return congestion
 
-
   def calculate_avg_wait_time(self, lane_ids):
     wait_times = []
     
@@ -509,6 +509,7 @@ wait_log = []
 
 congestion_log = []
 speed_log = []
+emissions_log = []
 
 for episode in range(1, episodes + 1):
     done = False
@@ -522,7 +523,7 @@ for episode in range(1, episodes + 1):
         state, reward, done, truncated, info = env.step(action)
         score += reward
 
-    state, _ = env.reset()
+    state, info = env.reset()
     score_log.append(score)
 
     # Extract wait time metrics
@@ -545,6 +546,7 @@ mean_sample_score = np.mean(score_log)
 mean_wait_time = np.mean(wait_log)
 mean_congestion = np.mean(congestion_log) if congestion_log else None
 mean_speed = np.mean(speed_log) if speed_log else None
+
 
 print(f"Mean Score over {episodes} episodes: {mean_sample_score}")
 print(f"Mean wait time over {episodes} episodes: {mean_wait_time}")
