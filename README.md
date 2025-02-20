@@ -37,7 +37,7 @@ Our project applies **OpenStreetMap's Web Wizard** to export real-life geographi
 Our RL agent observes the current traffic state using SUMO simulation data. Based on predefined reward functions, it adjusts signal timing to minimize congestion and improve efficiency. Over multiple training episodes, the agent optimizes its policy for real-world intersections.
 
 <p align="center">
-  <img src="./Documentation/process-flow-white-bg.png" alt="Process Flow Diagram" width="300px">
+  <img src="./Documentation/process-flow-white-bg.png" alt="Process Flow Diagram" width="425px">
 </p>
 <p align="center"><em>Process Flow Diagram</em></p>
 
