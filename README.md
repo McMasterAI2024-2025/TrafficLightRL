@@ -33,11 +33,13 @@ Our project applies **OpenStreetMap's Web Wizard** to export real-life geographi
 
 ## 🔄 Process Flow
 
-To understand how **TrafficLightRL** functions, refer to our process flow diagram below:  
+### How It Works  
+Our RL agent observes the current traffic state using SUMO simulation data. Based on predefined reward functions, it adjusts signal timing to minimize congestion and improve efficiency. Over multiple training episodes, the agent optimizes its policy for real-world intersections.
 
-![Process Flow Diagram](./Documentation/process-flow-white-bg.png)  
-
-This diagram outlines how our RL agent interacts with the environment, collects state information, and learns optimal policies through reinforcement learning.
+<figure style="text-align: center;">
+    <img src="./Documentation/process-flow-white-bg.png" alt="Process Flow Diagram" width="400px" height="auto">
+    <figcaption style="font-size: 14px; color: gray;">Process Flow Diagram</figcaption>
+</figure>
 
 ---
 
