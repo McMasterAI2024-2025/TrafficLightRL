@@ -23,16 +23,16 @@ The network for this geographical location was generated using OpenStreetMap dat
 ## 🚦 Results
 
 📉 Wait Time Reduction:
-- Low Traffic: 13% decrease
-- Medium Traffic: 24% decrease
-- High Traffic: 19% decrease
+- Low Traffic: 52.75% decrease (5.153439999999999 seconds for RL agent vs 10.900629494949495 seconds for traditional system)
+- Medium Traffic: 63.58% decrease (5.11545 seconds for RL agent vs 14.059166666666668 seconds for traditional system)
+- High Traffic: 66.69% decrease (5.15061 seconds for RL agent vs 15.463 seconds for traditional system)
 
 ![Wait Times Graph Placeholder](./documentation/mean_wait_time_plot_final2.png)
 
 🌱 Emissions Reduction:
-- Low Traffic: 10% decrease
-- Medium Traffic: 23% decrease
-- High Traffic: 29% decrease
+- Low Traffic: 0.30% decrease (2563.4278605333284 mg for RL agent vs 2571.2184771453694 mg for traditional system)
+- Medium Traffic: 21.41% decrease (2569.968846555399 mg for RL agent vs 3269.955435111211 mg for traditional system)
+- High Traffic: 30.27% decrease (2565.0124662914504 mg for RL agent vs 3678.6634837045954 mg for traditional system)
 
 ![Emissions Graph Placeholder](./documentation/mean_emissions_plot_final2.png)
 
