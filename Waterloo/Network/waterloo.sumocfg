@@ -6,29 +6,7 @@
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="../../../Sumo/2025-01-07-00-07-29/osm.net.xml.gz"/>
-        <route-files value="../../../Sumo/2025-01-07-00-07-29/osm.passenger.trips.xml"/>
-        <additional-files value="../../../Sumo/2025-01-07-00-07-29/osm.poly.xml.gz"/>
+        <net-file value="waterloo.net.xml"/>
     </input>
-
-    <processing>
-        <ignore-route-errors value="true"/>
-        <tls.actuated.jam-threshold value="30"/>
-    </processing>
-
-    <routing>
-        <device.rerouting.adaptation-steps value="18"/>
-        <device.rerouting.adaptation-interval value="10"/>
-    </routing>
-
-    <report>
-        <verbose value="true"/>
-        <duration-log.statistics value="true"/>
-        <no-step-log value="true"/>
-    </report>
-
-    <gui_only>
-        <gui-settings-file value="../../../Sumo/2025-01-07-00-07-29/osm.view.xml"/>
-    </gui_only>
 
 </sumoConfiguration>
