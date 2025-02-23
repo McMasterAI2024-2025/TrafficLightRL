@@ -26,21 +26,22 @@ The network for this geographical location was generated using OpenStreetMap dat
 
 | Traffic Level | RL Agent (seconds) | Traditional System (seconds) | Reduction (%) |
 |---------------|--------------------|------------------------------|---------------|
-| Low Traffic   | 5.15344            | 10.90063                     | 52.75%        |
-| Medium Traffic| 5.11545            | 14.05917                     | 63.58%        |
-| High Traffic  | 5.15061            | 15.46300                     | 66.69%        |
+| Low Traffic   | 11.239839990289614 | 11.38728616161616            | 1.32%         |
+| Medium Traffic| 11.388258329902675 | 13.057499999999997           | 12.79%        |
+| High Traffic  | 11.349240299271518 | 16.113999999999997           | 29.55%        |
 
-![Wait Times Graph Placeholder](./documentation/mean_wait_time_plot_final2.png)
+![Wait Times Graph Placeholder](./documentation/mean_wait_time_plot_final.png)
+
 
 ## 🌱 Emissions Reduction
 
 | Traffic Level | RL Agent (mg)           | Traditional System (mg)      | Reduction (%) |
 |---------------|-------------------------|------------------------------|---------------|
-| Low Traffic   | 2563.4278605333284      | 2571.2184771453694           | 0.30%         |
-| Medium Traffic| 2569.968846555399       | 3269.955435111211            | 21.41%        |
-| High Traffic  | 2565.0124662914504      | 3678.6634837045954           | 30.27%        |
+| Low Traffic   | 2337.890624050132       | 2643.0399574156813           | 11.55%        |
+| Medium Traffic| 2334.025230045951       | 3151.6486264464766           | 25.94%        |
+| High Traffic  | 2338.928777323909       | 3629.7550874920466           | 35.56%        |
 
-![Emissions Graph Placeholder](./documentation/mean_emissions_plot_final2.png)
+![Emissions Graph Placeholder](./documentation/mean_emissions_plot_final.png)
 
 ---
 
