@@ -2,19 +2,23 @@
 
 ---
 
-## 👥 Team Members
+## 🌟 Project Overview
 
-- **Kristian Diana** - Project Lead
-- **Clara Wong** - Project Member
-- **Ryan Li** - Project Member
-- **Varun Pathak** - Project Member
-- **Onboarding new member** -- Project Member
+**TrafficLightRL** leverages **Reinforcement Learning (RL)** to dynamically optimize traffic light control systems, reducing urban congestion and improving travel efficiency. By integrating real-world mapping tools with deep RL models, we develop adaptive signal control strategies that improve traffic flow, reduce emissions, and enhance urban mobility.
 
 ---
 
-## 🌟 Project Overview
+## 👥 Team Contributions
 
-**TrafficLightRL** leverages **Reinforcement Learning (RL)** to dynamically optimize traffic light control systems, reducing urban congestion and improving travel efficiency. This project showcases the power of machine learning in real-world infrastructure management, with a focus on scalability, safety, and adaptability.
+Our project applies **OpenStreetMap's Web Wizard** to export real-life geographical locations and train RL agents on real-world traffic data. By targeting intersections in major university campuses, we demonstrate **TrafficLightRL’s** ability to optimize traffic flow in practical, high-traffic areas. Each contributor focused on specific campus intersections, refining reward functions and agent performance for optimal real-world traffic simulations.
+
+- **Kristian Diana** - Project Lead ([McMaster University](McMaster/))  
+- **Clara Wong** - Project Member ([University of Waterloo](Waterloo/))  
+- **Ryan Li** - Project Member ([Queen’s University](Queens/))  
+- **Varun Pathak** - Project Member ([University of Toronto](UofT/))  
+- **Tridib Banik** - Project Member ([Western University](Western/))  
+
+
 
 ---
 
@@ -23,45 +27,28 @@
 - **Smart Traffic Control:** Adaptive traffic light decisions powered by RL agents.
 - **Real-World Simulations:** Authentic intersection models using **SUMO** and **OpenStreetMap**.
 - **Custom Reward Functions:** Tailored metrics to balance traffic flow and safety.
-- **University-Specific Demos:** Interactive optimizations for Ontario campuses.
 - **Comprehensive Visualizations:** Progress tracking with SUMO-GUI simulations.
 
 ---
 
-## 💻 Technologies
+## 🔄 Process Flow
 
-- **Reinforcement Learning:** [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/) for agent training.
-- **Traffic Simulation:** [SUMO (Simulation of Urban MObility)](https://www.eclipse.org/sumo/) for realistic modeling.
-- **Environment Design:** [OpenAI Gymnasium](https://gymnasium.farama.org/) for RL integration.
-- **Mapping Tools:** [OpenStreetMap](https://www.openstreetmap.org/) for real-world data.
-- **Visualization:** SUMO-GUI.
+### How It Works  
+Our RL agent observes the current traffic state using SUMO simulation data. Based on predefined reward functions, it adjusts signal timing to minimize congestion and improve efficiency. Over multiple training episodes, the agent optimizes its policy for real-world intersections.
 
----
-
-## 🏆 Project Highlights
-
-- **Innovative RL Integration:** Traffic agents trained to adapt dynamically to changing conditions.
-- **Real-World Scenarios:** Simulations modeled after real intersections with OSM data.
-- **Interactive Demos:** Campus-specific presentations to showcase tailored solutions.
-- **Scalable and Generalizable:** A foundation for expanding to diverse urban settings.
-
----
-
-## 🎓 CUCAI Demonstrations
-
-We will present **TrafficLightRL** at CUCAI with campus-specific traffic optimizations for:
-
-- 🏙️ **University of Toronto**
-- 🏗️ **University of Waterloo**
-- 🚏 **Western University**
-- 🛤️ **Queen's University**
-- 🏠 **McMaster University**
+<p align="center">
+  <img src="./Documentation/process-flow-white-bg.png" alt="Process Flow Diagram" width="425px">
+</p>
+<p align="center"><em>Process Flow Diagram</em></p>
 
 ---
 
 ## 📄 Learn More
 
-Dive into our [Design Document](https://docs.google.com/document/d/your-public-doc-link) for an in-depth description of the project timeline from MVP to final product, and discussions of the design choices we made along the way.
+For an in-depth breakdown of **TrafficLightRL**, check out:  
+
+- 📄 [Research Paper](./Documentation/TrafficLightRL_Research_Paper_2025.pdf) - Explains project motivation, RL methodology, and experimental results.  
+- 📑 [Design Document](https://docs.google.com/document/d/your-public-doc-link) - Project timeline, technical decisions, and key insights.  
 
 ---
 
