@@ -30,7 +30,7 @@ The network for this geographical location was generated using OpenStreetMap dat
 | Medium Traffic| 11.388258329902675 | 13.057499999999997           | 12.79%        |
 | High Traffic  | 11.349240299271518 | 16.113999999999997           | 29.55%        |
 
-![Wait Times Graph Placeholder](./documentation/mean_wait_time_plot_final.png)
+![Wait Times Graph Placeholder](./documentation/mean_wait_time_plot.png)
 
 
 ## 🌱 Emissions Reduction
@@ -41,7 +41,7 @@ The network for this geographical location was generated using OpenStreetMap dat
 | Medium Traffic| 2334.025230045951       | 3151.6486264464766           | 25.94%        |
 | High Traffic  | 2338.928777323909       | 3629.7550874920466           | 35.56%        |
 
-![Emissions Graph Placeholder](./documentation/mean_emissions_plot_final.png)
+![Emissions Graph Placeholder](./documentation/mean_emissions_plot.png)
 
 ---
 
