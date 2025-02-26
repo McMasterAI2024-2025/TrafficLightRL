@@ -48,7 +48,7 @@ Our RL agent observes the current traffic state using SUMO simulation data. Base
 For an in-depth breakdown of **TrafficLightRL**, check out:  
 
 - 📄 [Research Paper](./Documentation/TrafficLightRL_Research_Paper_2025.pdf) - Explains project motivation, RL methodology, and experimental results.  
-- 📑 [Design Document](https://docs.google.com/document/d/your-public-doc-link) - Project timeline, technical decisions, and key insights.  
+- 📑 [Design Document](https://docs.google.com/document/d/1m9ZCDl1O3ZabAaP11Tbe45Mk0o_FngD5ALsPjLbx118/edit?tab=t.0#heading=h.vtvp6977md3z) - Project timeline, technical decisions, and key insights.  
 
 ---
 
