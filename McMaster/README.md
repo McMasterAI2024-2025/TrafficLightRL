@@ -41,4 +41,4 @@ Our network was generated from OpenStreetMap data. While pedestrian crosswalks w
 - Pedestrian Consideration: Improve network accuracy by integrating pedestrian crossings.
 - Expanded Deployment: Apply the model to additional real-world locations.
 
-Our results demonstrate RL’s potential to revolutionize trffic management—making within the McMaster Community. Implementation of this project would make roads safer, more efficient, and environmentally friendly for Students, McMaster Faculty, and members of the community.
+Our results demonstrate RL’s potential to revolutionize traffic management—making within the McMaster Community. Implementation of this project would make roads safer, more efficient, and environmentally friendly for Students, McMaster Faculty, and members of the community.
