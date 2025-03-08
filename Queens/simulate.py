@@ -24,43 +24,37 @@ class SumoEnv(gymnasium.Env):
     # Define lanes directly connected to the intersection
     self.lanes = {
       # Edge 1 (East incoming)
-      "334693613#0_0": {"type": [0, 1, 0], "phases": [0]},  # Stright lane
-      "334693613#0_1": {"type": [0, 1, 0], "phases": [0]},  # Straight lane
-      "334693613#0_2": {"type": [0, 1, 0], "phases": [0]},  # Straight lane
-      "334693613#0_3": {"type": [1, 0, 0], "phases": [0, 2]},  # Left-turn lane
+      "4976399#0_0": {"type": [0, 1, 0], "phases": [0]},  # Stright lane
+      "4976399#0_1": {"type": [1 ,0, 0], "phases": [0, 1, 2] },  #left lane    
 
       # Edge 2 (West incoming)
-      "150872238#1_4": {"type": [1, 0, 0], "phases": [0, 2]},  # Left-turn lane
-      "150872238#1_3": {"type": [0, 1, 0], "phases": [0]},  # Straight lane
-      "150872238#1_2": {"type": [0, 1, 0], "phases": [0]},  # Straight lane
-      "150872238#1_1": {"type": [0, 1, 0], "phases": [0]},  # Straight lane
-      "150872238#1_0": {"type": [0, 0, 1], "phases": [0, 2, 5, 7]},  # Right-turn lane
-
+      "28160914#0_0": {"type": [0, 1, 1], "phases": [0]}, 
+      "28160914#0_1": {"type": [1, 0, 0], "phases": [0,1,2]}, 
+      
       # Edge 3 (South incoming)
-      "864501901#3_0": {"type": [1, 1, 1], "phases": [7, 5]},  # Left-Right-Straight-turn lane
+      "4754858#0_0": {"type": [1, 1, 1], "phases": [4]},  # Left-Right-Straight-turn lane
 
       # Edge 4 (North incoming)
-      "194417404#0_2": {"type": [1, 0, 0], "phases": [5, 7]},  # Left-turn lane
-      "194417404#0_1": {"type": [0, 1, 0], "phases": [5]},  # Straight lane
-      "194417404#0_0": {"type": [0, 0, 1], "phases": [0, 2, 5, 7]}  # Right-turn lane
+      "-388930252#1_0": {"type": [1, 1, 1], "phases": [4]},  # Left-turn lane
+      
     }
     self.last_phase_change_time = { # note: each of the keys correspond to one of my end state phases
       0: 0,
+      1: 0,
       2: 0,
-      5: 0,
-      7: 0
+      4: 0
     }
     self.vehicle_emissions = {}
     self.max_wait_time = 1000
-    num_lanes=13
+    num_lanes=6
     num_metrics_per_lane = 5
     num_lane_type_features=3 # [left, straight, right] "one-hot" encoding
     observation_size = 2 + num_lanes * (num_metrics_per_lane + num_lane_type_features)
     
-    max_cars = 250 # CHANGE FOR ACTUAL MAX. NUMBER OF CARS
+    max_cars = 100 # CHANGE FOR ACTUAL MAX. NUMBER OF CARS
     self.max_cars = max_cars
     
-    self.car_spawn_rate = 0.60 # cars spawn at 30% chance
+    self.car_spawn_rate = spawn_rate # cars spawn at 30% chance
 
     # np array structure: [traffic_light_phase][positions][speeds], dtype=np.float32
     self.observation_space = gymnasium.spaces.Box(
@@ -68,7 +62,7 @@ class SumoEnv(gymnasium.Env):
       high=np.array([1.0] * observation_size), # MUST CHANGE THE TRAFFIC LIGHT PHASE VALUE TO YOUR RESPECTIVE MAX!
       dtype=np.float32
     )
-    
+
     # Upon each render of the SumoEnv Class, we should start the simulation
     # Implement the sumo_binary, sumo_config, and traci.start from test_demo.py
     self.use_gui = use_gui
