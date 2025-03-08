@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-01-26 00:36:03 by Eclipse SUMO netedit Version 1.21.0
+<!-- generated on 2025-03-01 00:23:11 by Eclipse SUMO netedit Version 1.21.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumocfg-file value="./Network/waterloo.sumocfg"/>
+        <sumocfg-file value="C:\Users\clara\TrafficLightRL\Waterloo\Network\waterloo.sumocfg"/>
         <additional-files value=""/>
         <route-files value=""/>
-        <sumo-net-file value="./Network/waterloo.net.xml"/>
+        <sumo-net-file value="C:\Users\clara\TrafficLightRL\Waterloo\Network\waterloo.net.xml"/>
     </input>
 
     <output>
-        <output-file value="./Network/waterloo.net.xml"/>
+        <output-file value="C:\Users\clara\TrafficLightRL\Waterloo\Network\waterloo.net.xml"/>
         <output.street-names value="true"/>
     </output>
 
