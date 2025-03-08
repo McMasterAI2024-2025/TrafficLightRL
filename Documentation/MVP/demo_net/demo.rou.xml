@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-10-20 by Eclipse SUMO netedit Version 1.21.0 -->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicle Types (optional but helpful) -->
+    <vType id="car" accel="0.8" decel="4.5" length="5.0" maxSpeed="25.0"/>
+
+    <!-- First wave of trips... -->
+
+    <!-- NOTE FROM KRISTIAN: ROUTES MUST BE SORTED IN ORDER OF DEPARTURE TIME-->
+    <!---->
+    <trip id="t_0" type="car" depart="0.00" from="E11" to="-E9"/>
+    <trip id="t_3" type="car" depart="0.01" from="E8" to="-E10"/>
+    <trip id="t_2" type="car" depart="7.00" from="E10" to="-E8"/>
+    <trip id="t_1" type="car" depart="11.00" from="E9" to="-E11"/>
+
+    <!-- Next wave... -->
+    <trip id="t_7" type="car" depart="17.00" from="E8" to="-E10"/>
+    <trip id="t_4" type="car" depart="20.00" from="E11" to="-E9"/>
+    <trip id="t_6" type="car" depart="21.00" from="E10" to="-E8"/>
+    <trip id="t_5" type="car" depart="25.00" from="E9" to="-E11"/>
+    
+
+    <!-- Another wave... -->
+    <trip id="t_8" type="car" depart="31.00" from="E11" to="-E9"/>
+    <trip id="t_9" type="car" depart="37.00" from="E9" to="-E11"/>
+    <trip id="t_11" type="car" depart="39.00" from="E8" to="-E10"/>
+    <trip id="t_10" type="car" depart="45.00" from="E10" to="-E8"/>
+
+    <!-- Another wave... -->
+    <trip id="t_12" type="car" depart="46.00" from="E9" to="-E11"/>
+    <trip id="t_14" type="car" depart="53.00" from="E10" to="-E8"/>
+    <trip id="t_13" type="car" depart="53.00" from="E11" to="-E9"/>
+    <trip id="t_15" type="car" depart="58.00" from="E8" to="-E10"/>
+    
+    <!-- Add more waves as necessary -->
+</routes>

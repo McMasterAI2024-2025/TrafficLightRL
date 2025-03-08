@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-01-25 16:37:01 by Eclipse SUMO netedit Version 1.21.0
+<!-- generated on 2025-03-01 00:23:11 by Eclipse SUMO netedit Version 1.21.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumocfg-file value="./Network/waterloo.sumocfg"/>
+        <sumocfg-file value="C:\Users\clara\TrafficLightRL\Waterloo\Network\waterloo.sumocfg"/>
         <additional-files value=""/>
         <route-files value=""/>
-        <sumo-net-file value="./Network/waterloo.net.xml"/>
+        <sumo-net-file value="C:\Users\clara\TrafficLightRL\Waterloo\Network\waterloo.net.xml"/>
     </input>
 
     <output>
-        <output-file value="./Network/waterloo.net.xml"/>
+        <output-file value="C:\Users\clara\TrafficLightRL\Waterloo\Network\waterloo.net.xml"/>
         <output.street-names value="true"/>
     </output>
 
@@ -3595,13 +3595,13 @@
 
     <tlLogic id="cluster_2173954222_2173954227_2173954229_2173954232_#10more" type="actuated" programID="0" offset="0">
         <phase duration="27" state="GGGrrrrrrrGGGrrrrrrrrr"/>
-        <phase duration="4"  state="yyyyrrrrrryyyyrrrrrrrr"/>
+        <phase duration="3"  state="yyyyrrrrrryyyyrrrrrrrr"/>
         <phase duration="8"  state="rrrGGrrrrrrrrGGrrrrrrr" minDur="13" maxDur="50"/>
-        <phase duration="4"  state="rrryyrrrrrrrryyrrrrrrr"/>
+        <phase duration="3"  state="rrryyrrrrrrrryyrrrrrrr"/>
         <phase duration="27" state="rrrrrGGGrrrrrrrGGGrrrr" minDur="10" maxDur="50"/>
-        <phase duration="4"  state="rrrrryyyrrrrrrryyyrrrr"/>
+        <phase duration="3"  state="rrrrryyyrrrrrrryyyrrrr"/>
         <phase duration="8"  state="rrrrrrrrGGrrrrrrrrGGrr" minDur="10" maxDur="50"/>
-        <phase duration="4"  state="rrrrrrrryyrrrrrrrryyrr"/>
+        <phase duration="3"  state="rrrrrrrryyrrrrrrrryyrr"/>
     </tlLogic>
 
     <junction id="10211377490" type="dead_end" x="111.89" y="7.49" incLanes="137058995#3_0" intLanes="" shape="111.30,8.30 112.48,6.68"/>
