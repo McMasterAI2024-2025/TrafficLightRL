@@ -2,12 +2,13 @@
 import numpy as np
 import random
 import gymnasium
-import traci
 import sumolib
 import time
+import traci
+import os
 
 class SumoEnv(gymnasium.Env):
-  def __init__(self, use_gui=False, use_random=False, use_actions=True, spawn_rate=0.5):
+  def __init__(self, use_gui=False, use_random=False, use_actions=True):
     super().__init__() # Initializes the parent class
 
     # Check if TraCI is already loaded; if so, close it
@@ -55,10 +56,10 @@ class SumoEnv(gymnasium.Env):
     num_lane_type_features = 3 # [left, straight, right] "one-hot" encoding
     observation_size = 2 + num_lanes * (num_metrics_per_lane + num_lane_type_features)
 
-    max_cars = 100 # CHANGE FOR ACTUAL MAX. NUMBER OF CARS
+    max_cars = 250 # CHANGE FOR ACTUAL MAX. NUMBER OF CARS
     self.max_cars = max_cars
     
-    self.car_spawn_rate = spawn_rate # cars spawn at 40% chance
+    self.car_spawn_rate = 0.60 # cars spawn at 40% chance
 
     # np array structure: [traffic_light_phase][positions][speeds], dtype=np.float32
     self.observation_space = gymnasium.spaces.Box(
@@ -78,9 +79,9 @@ class SumoEnv(gymnasium.Env):
     # use the proper .sumocfg file depending on if want predefined or random cars
     self.use_random = use_random
     if use_random:
-      sumo_config = "./network/western.sumocfg"
+      sumo_config = os.path.join(os.path.dirname(__file__), "./network/western.sumocfg")
     else:
-      sumo_config = "./network/western.sumocfg"
+      sumo_config = os.path.join(os.path.dirname(__file__), "./network/western.sumocfg")
     
     # used to track number of deployed cars
     if self.use_random:
@@ -109,7 +110,7 @@ class SumoEnv(gymnasium.Env):
   def step(self, action):
     # On first step, start the traci sim
     if not self.started:
-      traci.start([self.sumo_binary, "--start", "-c", self.sumo_config])
+      traci.start([self.sumo_binary, "--start", "-c", self.sumo_config], port=8813)
       self.started = True
       traffic_light_id = traci.trafficlight.getIDList()[0]
       traci.trafficlight.setPhase(traffic_light_id, 0) # Ensure light phases are all manually controlled
